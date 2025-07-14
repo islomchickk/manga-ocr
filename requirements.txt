@@ -1,0 +1,18 @@
+awscli
+ipython
+jupyterlab
+loguru
+matplotlib
+mkdocs
+notebook
+numpy
+pandas
+pip
+pytest
+python-dotenv
+roboflow
+ruff
+scikit-learn
+tqdm
+typer
+-e .

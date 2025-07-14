@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "manga_ocr"
+version = "0.0.1"
+description = "Translate manga from Japanese to Russian or English"
+authors = [
+  { name = "Islom Aliev" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.10.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["manga_ocr"]
+include = ["pyproject.toml", "manga_ocr/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["manga_ocr"]
+force-sort-within-sections = true
+
